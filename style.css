@@ -429,3 +429,43 @@ footer {
 footer p {
     text-align: center;
 }
+
+/* GITHUB PAGE */
+
+#repo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.repo-card {
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 16px;
+  background: #fff;
+}
+
+.repo-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0969da;
+  text-decoration: none;
+}
+
+.repo-title:hover {
+  text-decoration: underline;
+}
+
+.repo-meta {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #57606a;
+  display: flex;
+  gap: 16px;
+}
+
+.repo-desc {
+  margin-top: 6px;
+  color: #24292f;
+  font-size: 14px;
+}
