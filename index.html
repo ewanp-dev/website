@@ -1,148 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- give a catcher name to the title of the website  -->
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Ewan Palmer</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo">Ewan Palmer</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Ewan Palmer</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <!-- lines of hamburger menu -->
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
+      <div class="logo">Ewan Palmer</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <!-- lines of hamburger menu -->
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
     <section id="profile">
-        <div class="section__pic-container profile-pic">
-            <!-- replace picture at a different point -->
-            <img src="./assets/profile_picture_03.jpeg" alt="Ewan Palmer Profile Picture"/>
+      <div class="section__pic-container profile-pic">
+        <!-- replace picture at a different point -->
+        <img
+          src="./assets/profile_picture_03.jpeg"
+          alt="Ewan Palmer Profile Picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ewan Palmer</h1>
+        <p class="section__text__p2">Pipeline TD</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/files/ewan_palmer_cv.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Ewan Palmer</h1>
-            <p class="section__text__p2">Pipeline TD</p>
-            <div class="btn-container">
-                <button 
-                    class="btn btn-color-2"
-                    onclick="window.open('./assets/files/ewan_palmer_cv.pdf')">
-                    Download CV
-                </button>
-                <button 
-                    class="btn btn-color-1"
-                    onclick="location.href='./#contact'">
-                    Contact Info
-                </button>
-            </div>
-            <div id="socials-container">
-                <img 
-                    src="./assets/linkedin.png" 
-                    alt="LinkedIn Profile"
-                    class="icon" 
-                    onclick="location.href='https://linkedin.com/in/ewanpalmervfx/'"
-                />
-                <img 
-                    src="./assets/github.png" 
-                    alt="Github Profile"
-                    class="icon" 
-                    onclick="location.href='https://github.com/ewanp-dev/'"
-                />
-            </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn Profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/ewanpalmervfx/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="Github Profile"
+            class="icon"
+            onclick="location.href='https://github.com/ewanp-dev/'"
+          />
         </div>
+      </div>
     </section>
     <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.jpeg" alt="Profile Picture"
-                class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience Icon"
-                        class="icon">
-                        <h3>Experience</h3>
-                        <p>2+ Years <br>Research & Development</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education Icon"
-                        class="icon">
-                        <h3>Education</h3>
-                        <p>B.A(Hons) Visual Effects</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur harum debitis optio nostrum, hic odit mollitia, quod ipsam est facere minus illo non voluptatum perspiciatis? Ipsum vitae nobis eius perspiciatis!</p>
-                </div>
-            </div>
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpeg"
+            alt="Profile Picture"
+            class="about-pic"
+          />
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
-        onclick="location.href='./#projects'">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience Icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ Years <br />Research & Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education Icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.A(Hons) Visual Effects</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              harum debitis optio nostrum, hic odit mollitia, quod ipsam est
+              facere minus illo non voluptatum perspiciatis? Ipsum vitae nobis
+              eius perspiciatis!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
     </section>
-        <section id="projects">
-            <h2>My GitHub Repositories
+    <section id="projects">
+      <h2>My GitHub Repositories</h2>
+      <div id="repo-list"></div>
+    </section>
 
-                
-            </h2>
-            <div id="repo-list"></div>
-        </section>
-
-        <script src="repos.js"></script>
+    <script src="repos.js"></script>
     <section id="contact">
-        <p class="section__text__p1">Get In Touch</p>
-        <h1 class="title"> Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email Icon"
-                class="icon contact-icon email-icon">
-                <p><a href="mailto:tpe.dev@proton.me">tpe.dev@proton.me</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn Icon"
-                class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/ewanpalmervfx">LinkedIn</a></p>
-            </div>
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email Icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:tpe.dev@proton.me">tpe.dev@proton.me</a></p>
         </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn Icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/ewanpalmervfx">LinkedIn</a>
+          </p>
+        </div>
+      </div>
     </section>
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2025 Ewan Palmer. All Rights Reserved</p>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Ewan Palmer. All Rights Reserved</p>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
+
